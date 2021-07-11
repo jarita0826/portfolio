@@ -15,24 +15,23 @@
       <ul
         class="hidden md:flex space-x-9 text-black-lighter font-semibold text-sm"
       >
-        <a href="/#/introduction">
+        <router-link to="/introduction">
           <li>
             WORK
-          </li></a
+          </li></router-link
         >
-        <a href="/#/about">
+        <router-link to="/about">
           <li>
             ABOUT
-          </li></a
+          </li></router-link
         >
-
         <li>
           CONTACT
         </li>
       </ul>
     </div>
   </header>
-  <!-- <transition name="slide">
+  <transition name="slide">
     <div
       class="backdrop-blur absolute left-0 right-0 top-0 h-screen"
       v-show="slidemenu"
@@ -54,18 +53,18 @@
           class="space-y-6 flex flex-col items-center text-white font-light text-3xl"
         >
           <div>
-            <a href="/#/introduction">
+            <router-link to="/introduction">
               <li>
                 WORK
               </li>
-            </a>
+            </router-link>
           </div>
           <div class="mt-6">
-            <a href="/#/about">
+            <router-link to="/about">
               <li>
                 ABOUT
               </li>
-            </a>
+            </router-link>
           </div>
           <div>
             <li>
@@ -75,7 +74,7 @@
         </ul>
       </div>
     </div>
-  </transition> -->
+  </transition>
 </template>
 
 <script>

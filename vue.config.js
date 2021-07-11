@@ -22,5 +22,5 @@ module.exports = {
         // 修改 images-loader 配置
         config.module.rule("images").exclude.add(resolve("src/assets/icon"));
     },
-    publicPath: process.env.NODE_ENV === "production" ? "/my-project/" : "/",
+    publicPath: process.env.NODE_ENV === "production" ? "/portfolio/" : "/",
 };
