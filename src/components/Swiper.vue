@@ -56,7 +56,7 @@ export default {
           },
           1024: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 20,
             slidesPerGroup: 2,
           },
         },
@@ -74,7 +74,7 @@ export default {
     },
     spaceBetween: {
       type: Number,
-      default: 30,
+      default: 20,
     },
     slidesPerGroup: {
       type: Number,

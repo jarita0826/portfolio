@@ -72,26 +72,32 @@ export default {
             {
               src: require("../assets/image/carousel/AdjusTable-3.jpg"),
               alt: "Emote",
+              href: "/product/Emote",
             },
             {
               src: require("../assets/image/carousel/AdjusTable.jpg"),
               alt: "Emote",
+              href: "/product/AdjusTable",
             },
             {
               src: require("../assets/image/carousel/AdjusTable-5.jpg"),
               alt: "Emote",
+              href: "/product/Connect4U",
             },
             {
               src: require("../assets/image/carousel/AdjusTable-6.jpg"),
               alt: "Emote",
+              href: "/product/LoveFortuneTeller",
             },
             {
               src: require("../assets/image/carousel/AdjusTable-5.jpg"),
               alt: "Emote",
+              href: "/product/Connect4U",
             },
             {
               src: require("../assets/image/carousel/AdjusTable-4.jpg"),
               alt: "Emote",
+              href: "/product/DumplingMaker",
             },
           ],
         },
