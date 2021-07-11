@@ -40,6 +40,7 @@ export default {
                 "Emote is an app made to be a directory for your emotions, making self-reflection and analysis conveniently in your hands. ",
               src: require("../assets/image/homepage/emote.jpg"),
               alt: "Emote",
+              herf: "/product/Emote",
             },
             {
               title: "SMART RM",
@@ -48,6 +49,7 @@ export default {
                 "Emote is an app made to be a directory for your emotions, making self-reflection and analysis conveniently in your hands. ",
               src: require("../assets/image/homepage/smartRM.jpg"),
               alt: "SMART RM",
+              herf: "/product/SmartRM",
             },
           ],
         },
