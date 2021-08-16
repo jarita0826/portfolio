@@ -1,6 +1,16 @@
 <template>
   <header
-    class="relative flex justify-between items-center lg:px-36 pt-10 px-7 pb-6 lg:pb-3"
+    class="
+      relative
+      flex
+      justify-between
+      items-center
+      lg:px-36
+      pt-10
+      px-7
+      pb-6
+      lg:pb-3
+    "
   >
     <div>
       <router-link to="/"
@@ -13,21 +23,22 @@
       </button>
 
       <ul
-        class="hidden md:flex space-x-9 text-black-lighter font-semibold text-sm"
+        class="
+          hidden
+          md:flex
+          space-x-9
+          text-black-lighter
+          font-semibold
+          text-sm
+        "
       >
         <router-link to="/introduction">
-          <li>
-            WORK
-          </li></router-link
+          <li class="hover:text-black-default">WORK</li></router-link
         >
         <router-link to="/about">
-          <li>
-            ABOUT
-          </li></router-link
+          <li class="hover:text-black-default">ABOUT</li></router-link
         >
-        <li>
-          CONTACT
-        </li>
+        <li>CONTACT</li>
       </ul>
     </div>
   </header>
@@ -50,26 +61,27 @@
       </div>
       <div class="mt-40">
         <ul
-          class="space-y-6 flex flex-col items-center text-white font-light text-3xl"
+          class="
+            space-y-6
+            flex flex-col
+            items-center
+            text-white
+            font-light
+            text-3xl
+          "
         >
           <div>
             <router-link to="/introduction">
-              <li>
-                WORK
-              </li>
+              <li>WORK</li>
             </router-link>
           </div>
           <div class="mt-6">
             <router-link to="/about">
-              <li>
-                ABOUT
-              </li>
+              <li>ABOUT</li>
             </router-link>
           </div>
           <div>
-            <li>
-              CONTACT
-            </li>
+            <li>CONTACT</li>
           </div>
         </ul>
       </div>

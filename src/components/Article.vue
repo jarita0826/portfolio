@@ -10,16 +10,15 @@
     <div class="md:w-1/2 w-full">
       <ArticlePicture :src="item.src" :alt="item.alt" />
     </div>
-
     <div
       class="md:w-1/2 w-full flex mt-5 md:mt-0"
-      :class="[key % 2 ? 'justify-start' : 'justify-end']"
+      :class="[key % 2 ? 'justify-start md:pl-3' : 'justify-end']"
     >
       <ArticleTitle
         :title="item.title"
-        :herf="item.herf"
         :subTitle="item.subtitle"
         :description="item.description"
+        :herf="item.herf"
       />
     </div>
   </div>

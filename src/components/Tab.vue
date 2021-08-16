@@ -1,6 +1,13 @@
 <template>
   <div
-    class="pt-10 md:text-2xl text-lg text-black-light md:space-x-16 space-x-7"
+    class="
+      pt-14
+      pb-10
+      md:text-2xl
+      text-lg text-black-light
+      md:space-x-16
+      space-x-7
+    "
   >
     <button
       class="px-1 py-0.5 focus:outline-none"
