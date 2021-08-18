@@ -8,8 +8,13 @@
       :creationTime="getProductById.intro.creationTime"
       :time="getProductById.intro.time"
       :style="getProductById.intro.style"
+      class="md:mx-3"
     />
-    <div v-for="(image, key) in getProductById.images" :key="key">
+    <div
+      v-for="(image, key) in getProductById.images"
+      :key="key"
+      class="md:mx-3"
+    >
       <picture class="block">
         <img :src="image.src" :alt="image.alt" />
       </picture>

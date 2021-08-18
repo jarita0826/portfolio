@@ -7,6 +7,7 @@
       text-lg text-black-light
       md:space-x-16
       space-x-7
+      md:mx-3
     "
   >
     <button
@@ -25,6 +26,7 @@
     v-for="content in contents"
     :key="content.id"
     v-show="pagename == content.id"
+    class="md:mx-3"
   >
     <Article :items="content.sourses" />
     <Swiper :items="content.imgs" />

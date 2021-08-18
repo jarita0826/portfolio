@@ -3,12 +3,18 @@
     <div class="lg:flex">
       <div class="w-full lg:w-2/3">
         <h1
-          class="text-black-light text-3xl md:text-5xl leading-tight lg:pr-20 font-light"
+          class="
+            text-black-light text-3xl
+            md:text-5xl
+            leading-tight
+            lg:pr-20
+            font-light
+          "
         >
           ERIC CHIA-HUA CHEN
         </h1>
         <div class="w-full lg:hidden mt-7">
-          <img class="w-full" src="../assets/image/Eric.jpg" alt="eric" />
+          <img class="w-full" src="../assets/image/Eric-mb.jpg" alt="eric" />
         </div>
 
         <p class="my-8 lg:my-16 text-black-default lg:pr-36">
@@ -66,9 +72,9 @@ export default {
   data() {
     return {
       links: [
-        { label: "Email", href: "" },
+        { label: "Email", href: "mailto:chiahua0307@gmail.com" },
         { label: "Instagram", href: "https://www.instagram.com/iericchen/" },
-        { label: "LinkedIn", href: "https://tw.linkedin.com/" },
+        { label: "LinkedIn", href: "https://www.linkedin.com/in/iericchen/" },
       ],
     };
   },
