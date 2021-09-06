@@ -1,26 +1,31 @@
 <template>
   <div
-    class="lg:px-10 md:flex justify-between items-center py-9"
-    :class="{
-      'flex-row-reverse': key % 2,
-    }"
-    v-for="(item, key) in items"
-    :key="key"
+    class="border-2 border-red-900"
+    v-for="(item, index) in items"
+    :key="index"
   >
-    <div class="md:w-1/2 w-full">
-      <ArticlePicture :src="item.src" :alt="item.alt" />
-    </div>
-    <div
-      class="md:w-1/2 w-full flex mt-5 md:mt-0"
-      :class="[key % 2 ? 'justify-start md:pl-3' : 'justify-end']"
+    <button
+      class="lg:px-10 md:flex justify-between items-center py-9"
+      @click="changePage(item.herf)"
+      :class="{
+        'flex-row-reverse': index % 2,
+      }"
     >
-      <ArticleTitle
-        :title="item.title"
-        :subTitle="item.subtitle"
-        :description="item.description"
-        :herf="item.herf"
-      />
-    </div>
+    {{item.herf}}
+      <div class="md:w-1/2 w-full">
+        <ArticlePicture :src="item.src" :alt="item.alt" />
+      </div>
+      <div
+        class="md:w-1/2 w-full flex mt-5 md:mt-0 text-left"
+        :class="[index % 2 ? 'justify-start md:pl-3' : 'justify-end']"
+      >
+        <ArticleTitle
+          :title="item.title"
+          :subTitle="item.subtitle"
+          :description="item.description"
+        />
+      </div>
+    </button>
   </div>
 </template>
 
@@ -38,6 +43,12 @@ export default {
     items: {
       type: Array,
       default: () => [],
+    },
+  },
+  methods: {
+    changePage(a) {
+      this.$router.push({ path: a });
+      window.scrollTo(0, 0);
     },
   },
 };

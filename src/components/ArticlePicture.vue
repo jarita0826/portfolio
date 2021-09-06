@@ -1,7 +1,7 @@
 <template>
   <div>
     <picture class="block">
-      <img :src="src" :alt="alt" />
+      <img :src="src" :alt="alt" class="w-full" />
     </picture>
   </div>
 </template>

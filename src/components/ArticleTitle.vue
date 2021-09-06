@@ -1,13 +1,13 @@
 <template>
   <div class="md:w-4/5 w-full">
-    <router-link :to="herf" @click="scrollToTop">
-      <div class="flex items-center mb-2.5 space-x-1">
-        <h3 class="md:text-4xl text-3xl font-normal text-black-light">
-          {{ title }}
-        </h3>
-        <SvgIcon iconName="arrow-right " class="w-6 h-5" />
-      </div>
-    </router-link>
+    <!-- <router-link :to="herf" @click="scrollToTop"> -->
+    <div class="flex items-center mb-2.5 space-x-1">
+      <h3 class="md:text-4xl text-3xl font-normal text-black-light">
+        {{ title }}
+      </h3>
+      <SvgIcon iconName="arrow-right " class="w-6 h-5" />
+    </div>
+    <!-- </router-link> -->
     <span class="text-base font-medium text-black-lighter">{{ subTitle }}</span>
     <p class="text-lg mt-3.5 font-light text-black-default">
       {{ description }}
@@ -36,10 +36,10 @@ export default {
       type: String,
       default: "",
     },
-    herf: {
-      type: String,
-      default: "",
-    },
+    // herf: {
+    //   type: String,
+    //   default: "",
+    // },
   },
   methods: {
     scrollToTop() {

@@ -1,4 +1,6 @@
-import { createStore } from "vuex";
+import {
+    createStore
+} from "vuex";
 
 export default createStore({
     state: {
@@ -42,6 +44,7 @@ export default createStore({
                             description: "Providing a simplified analysis of your emotions and streamlining the uploading flow became the first initiative. Unlike the tone of a written journal, we created a playful emotional diary for users to have both privacy and a sense of community to document their growth.",
                         },
                     },
+
                 ],
                 link: {
                     title: "Mind of Dots",
@@ -377,6 +380,7 @@ export default createStore({
                     {
                         src: require("../assets/image/product/Emote/Emote Presentation8.jpg"),
                         alt: "Emote",
+                        video: require("../assets/image/product/Emote/Emote-8.mp4"),
                     },
                     {
                         src: require("../assets/image/product/Emote/Emote Presentation9.jpg"),

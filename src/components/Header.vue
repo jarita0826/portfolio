@@ -73,17 +73,30 @@
           "
         >
           <div>
-            <router-link to="/introduction">
+            <router-link
+              to="/introduction"
+              class="hover:text-black-lighter"
+              @click="close()"
+            >
               <li>WORK</li>
             </router-link>
           </div>
           <div class="mt-6">
-            <router-link to="/about">
+            <router-link
+              to="/about"
+              class="hover:text-black-lighter"
+              @click="close()"
+            >
               <li>ABOUT</li>
             </router-link>
           </div>
           <div>
-            <li>CONTACT</li>
+            <a
+              href="mailto:chiahua0307@gmail.com"
+              class="hover:text-black-lighter"
+            >
+              <li>CONTACT</li>
+            </a>
           </div>
         </ul>
       </div>
@@ -104,6 +117,11 @@ export default {
     return {
       slidemenu: false,
     };
+  },
+  methods: {
+    close: function () {
+      this.slidemenu = !this.slidemenu;
+    },
   },
 };
 </script>
