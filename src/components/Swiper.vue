@@ -3,16 +3,14 @@
     <h3 class="font-light text-5xl">Other Projects</h3>
 
     <swiper
+      :breakpoints="swiperOptions.breakpoints"
       :slidesPerView="slidesPerView"
       :spaceBetween="spaceBetween"
       :slidesPerGroup="slidesPerGroup"
-      :slidesOffsetBefore="slidesOffsetBefore"
-      :loop="true"
       :grabCursor="true"
+      :loop="true"
       :loopFillGroupWithBlank="true"
-      :observer="true"
-      :breakpoints="swiperOptions.breakpoints"
-      :observeParents="true"
+      :navigation="true"
       class="mySwiper z-0 mt-8"
     >
       <swiper-slide v-for="(item, key) in items" :key="key">
@@ -80,10 +78,6 @@ export default {
       type: Number,
       default: 2,
     },
-    slidesOffsetBefore: {
-      type: Number,
-      default: 50,
-    },
   },
   setup() {
     const { width, height } = useWindowSize();
@@ -100,9 +94,18 @@ export default {
 };
 </script>
 <style>
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: rgba(127, 127, 127, 0.8);
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
+  --swiper-navigation-color: #e5e5e5;
+  --swiper-navigation-size: 20px;
 }
 
 .swiper-slide {

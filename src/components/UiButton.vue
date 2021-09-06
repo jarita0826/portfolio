@@ -1,10 +1,20 @@
 <template>
-  <button
-    class="bg-black-default text-base text-white py-4 pl-4 pr-5 flex items-center"
+  <a
+    href="mailto:chiahua0307@gmail.com"
+    class="
+      bg-black-default
+      text-base text-white
+      py-4
+      pl-4
+      pr-5
+      flex
+      items-center
+      hover:opacity-90
+    "
   >
     {{ text }}
     <SvgIcon iconName="arrow-right" class="w-6 h-8 ml-4" />
-  </button>
+  </a>
 </template>
 
 <script>

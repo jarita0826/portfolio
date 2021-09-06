@@ -1,5 +1,5 @@
 <template>
-  <div class="md:w-3/4 w-full">
+  <div class="md:w-4/5 w-full">
     <router-link :to="herf" @click="scrollToTop">
       <div class="flex items-center mb-2.5 space-x-1">
         <h3 class="md:text-4xl text-3xl font-normal text-black-light">
