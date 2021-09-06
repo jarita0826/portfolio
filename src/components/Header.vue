@@ -38,7 +38,9 @@
         <router-link to="/about">
           <li class="hover:text-black-default">ABOUT</li></router-link
         >
-        <li>CONTACT</li>
+        <a href="mailto:chiahua0307@gmail.com" class="hover:text-black-default">
+          <li>CONTACT</li></a
+        >
       </ul>
     </div>
   </header>
