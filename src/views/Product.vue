@@ -16,13 +16,16 @@
       class="md:mx-3"
     >
       <picture class="block">
-        <img :src="image.src" :alt="image.alt" />
+        <img :src="image.src" :alt="image.alt" class="w-full" />
       </picture>
       <Conclusion
         v-if="image.conclusion"
         :title="image.conclusion.title"
         :description="image.conclusion.description"
       />
+      <video autoplay muted loop v-if="image.video">
+        <source :src="image.video" type="video/mp4" />
+      </video>
     </div>
 
     <Footer>
