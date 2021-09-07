@@ -4,7 +4,14 @@
       <h3 class="md:text-4xl text-3xl font-normal text-black-light">
         {{ title }}
       </h3>
-      <SvgIcon iconName="arrow-right " class="w-6 h-5" />
+      <div
+        class="mt-1"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      >
+        <SvgIcon iconName="arrow-right " class="w-6 h-6" />
+      </div>
     </div>
     <span class="text-base font-medium text-black-lighter">{{ subTitle }}</span>
     <p class="text-lg mt-3.5 font-light text-black-default">

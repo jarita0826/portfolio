@@ -43,6 +43,7 @@
         </router-link>
       </div>
     </Footer>
+    <ScrollTop />
   </div>
 </template>
 
@@ -51,6 +52,7 @@ import Intro from "../components/Intro.vue";
 import Conclusion from "../components/Conclusion.vue";
 import Footer from "../components/Footer.vue";
 import SvgIcon from "../components/SvgIcon.vue";
+import ScrollTop from "../components/ScrollTop.vue";
 
 export default {
   name: "Product",
@@ -60,6 +62,7 @@ export default {
     Conclusion,
     Footer,
     SvgIcon,
+    ScrollTop,
   },
 
   data() {

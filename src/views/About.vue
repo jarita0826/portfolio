@@ -38,11 +38,17 @@
           </h2>
           <div class="space-y-4 lg:space-x-12 lg:space-y-0 lg:flex mt-3">
             <div v-for="(link, key) in links" :key="key">
-              <a :href="link.href" class="flex items-center">
+              <a
+                :href="link.href"
+                class="flex items-center"
+                @mouseover="mouseOver(key)"
+                @mouseleave="mouseleave(key)"
+              >
                 <span class="text-3xl lg:text-4xl font-light text-black-light">
                   {{ link.label }}</span
                 >
                 <SvgIcon
+                  v-show="links[key].active"
                   iconName="arrow-right"
                   class="w-6 h-5 ml-1 text-black-default"
                 />
@@ -72,11 +78,38 @@ export default {
   data() {
     return {
       links: [
-        { label: "Email", href: "mailto:chiahua0307@gmail.com" },
-        { label: "Instagram", href: "https://www.instagram.com/iericchen/" },
-        { label: "LinkedIn", href: "https://www.linkedin.com/in/iericchen/" },
+        {
+          id: "0",
+          active: false,
+          label: "Email",
+          href: "mailto:chiahua0307@gmail.com",
+        },
+        {
+          id: "1",
+          active: false,
+          label: "Instagram",
+          href: "https://www.instagram.com/iericchen/",
+        },
+        {
+          id: "2",
+          active: false,
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/iericchen/",
+        },
       ],
     };
+  },
+  methods: {
+    mouseOver: function (key) {
+      if (key == this.links[key].id) {
+        this.links[key].active = true;
+      }
+    },
+    mouseleave: function (key) {
+      if (key == this.links[key].id) {
+        this.links[key].active = false;
+      }
+    },
   },
 };
 </script>
