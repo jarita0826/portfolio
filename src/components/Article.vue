@@ -11,7 +11,6 @@
         'flex-row-reverse': index % 2,
       }"
     >
-    {{item.herf}}
       <div class="md:w-1/2 w-full">
         <ArticlePicture :src="item.src" :alt="item.alt" />
       </div>
