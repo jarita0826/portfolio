@@ -9,7 +9,7 @@
       pr-5
       flex
       items-center
-      hover:opacity-90
+      hover:opacity-80
     "
   >
     {{ text }}

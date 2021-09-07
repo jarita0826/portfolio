@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="border-2 border-red-900"
-    v-for="(item, index) in items"
-    :key="index"
-  >
+  <div v-for="(item, index) in items" :key="index">
     <button
       class="lg:px-10 md:flex justify-between items-center py-9"
       @click="changePage(item.herf)"

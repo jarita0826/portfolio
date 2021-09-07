@@ -5,6 +5,7 @@
     <ArticleSquare :items="articles[2].sourses" />
     <Swiper :items="articles[3].images" class="mt-10" />
     <Footer :content="articles[4].content" />
+    <ScrollTop />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Article from "../components/Article.vue";
 import ArticleSquare from "../components/ArticleSquare.vue";
 import Swiper from "../components/Swiper.vue";
 import Footer from "../components/Footer.vue";
+import ScrollTop from "../components/ScrollTop.vue";
 
 export default {
   name: "Introduction",
@@ -23,6 +25,7 @@ export default {
     ArticleSquare,
     Swiper,
     Footer,
+    ScrollTop,
   },
   data() {
     return {

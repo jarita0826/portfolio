@@ -3,6 +3,7 @@
     <Intro :subTitle="articles[0].subTitle" :title="articles[0].title" />
     <Tab :contents="articles[1].contents" />
     <Footer :content="articles[2].content" />
+    <ScrollTop />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Intro from "../components/Intro.vue";
 import Tab from "../components/Tab.vue";
 import Footer from "../components/Footer.vue";
+import ScrollTop from "../components/ScrollTop.vue";
 
 export default {
   name: "Home",
@@ -17,6 +19,7 @@ export default {
     Intro,
     Tab,
     Footer,
+    ScrollTop,
   },
   data() {
     return {
