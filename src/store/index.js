@@ -50,6 +50,7 @@ export default createStore({
                     title: "Mind of Dots",
                     herf: "/product/MindofDots",
                 },
+                password: "123456",
             },
             {
                 id: "2",
@@ -148,6 +149,7 @@ export default createStore({
                     title: "Dizzedy",
                     herf: "/product/Dizzedy",
                 },
+                password: '123456'
             },
             {
                 id: "3",
@@ -222,6 +224,7 @@ export default createStore({
                     title: "T 42",
                     herf: "/product/T42",
                 },
+                password: '123456'
             },
             {
                 id: "4",
@@ -268,6 +271,7 @@ export default createStore({
                     title: "AdjusTable",
                     herf: "/product/AdjusTable",
                 },
+                password: '123456'
             },
             {
                 id: "5",
@@ -302,6 +306,7 @@ export default createStore({
                     title: "CONNECT 4 U",
                     herf: "/product/Connect4U",
                 },
+                password: '123456'
             },
             {
                 id: "6",
@@ -336,6 +341,7 @@ export default createStore({
                     title: "EmergenSee",
                     herf: "/product/EmergenSee",
                 },
+                password: '123456'
             },
             {
                 id: "7",
@@ -419,6 +425,7 @@ export default createStore({
                     title: "SMART RM",
                     herf: "/product/SmartRM",
                 },
+                password: '123456'
             },
             {
                 id: "8",
@@ -465,6 +472,7 @@ export default createStore({
                     title: "Dumpling Maker",
                     herf: "/product/DumplingMaker",
                 },
+                password: '123456'
             },
             {
                 id: "9",
@@ -482,6 +490,7 @@ export default createStore({
                     title: "3689 Light",
                     herf: "/product/3689Light",
                 },
+                password: '123456'
             },
             {
                 id: "10",
@@ -499,6 +508,7 @@ export default createStore({
                     title: "Love Fortune Teller",
                     herf: "/product/LoveFortuneTeller",
                 },
+                password: '123456'
             },
             {
                 id: "11",
@@ -533,6 +543,7 @@ export default createStore({
                     title: "Emote",
                     herf: "/product/Emote",
                 },
+                password: '123456'
             },
         ],
     },

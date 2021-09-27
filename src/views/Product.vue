@@ -1,5 +1,11 @@
 <template>
-  <div class="lg:px-36 pt-12 md:pb-10 px-5">
+  <Login
+    :password="getProductById.password"
+    @value-update="getValFromChild"
+    v-if="!inputValFromChild"
+  />
+
+  <div class="lg:px-36 pt-12 md:pb-10 px-5" v-if="inputValFromChild">
     <Intro
       :title="getProductById.intro.title"
       :slogan="getProductById.intro.slogan"
@@ -53,6 +59,7 @@ import Conclusion from "../components/Conclusion.vue";
 import Footer from "../components/Footer.vue";
 import SvgIcon from "../components/SvgIcon.vue";
 import ScrollTop from "../components/ScrollTop.vue";
+import Login from "./Login.vue";
 
 export default {
   name: "Product",
@@ -63,12 +70,15 @@ export default {
     Footer,
     SvgIcon,
     ScrollTop,
+    Login,
   },
 
   data() {
-    return {};
+    return {
+      inputContent: "",
+      inputValFromChild: "",
+    };
   },
-  props: {},
   computed: {
     getProductById() {
       return this.$store.state.productLists.find(
@@ -79,6 +89,9 @@ export default {
   methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
+    },
+    getValFromChild(val) {
+      this.inputValFromChild = val;
     },
   },
 };

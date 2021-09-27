@@ -2,32 +2,77 @@
   <div class="lg:px-36 px-5 pt-12 pb-10">
     <div class="space-y-7">
       <Intro :title="'Login'" />
-      <p>
-        Please enter password to access to my lastest work
-      </p>
+      <p>Please enter password to access to my lastest work</p>
       <input
         class="placeholder-black-lighter focus:outline-gray w-2/3"
         placeholder=" Enter Password"
+        v-model="message"
       />
-      <UiButton class="w-auto" :text="'Submit'" />
+      <p v-if="sign" class="text-red-500 font-extrabold">
+        This is the wrong password !!!
+      </p>
+      <a
+        class="
+          bg-black-default
+          text-base text-white
+          py-4
+          pl-4
+          pr-5
+          flex
+          items-center
+          hover:opacity-80
+          w-32
+          cursor-pointer
+        "
+        @click="verify(message)"
+      >
+        Submit
+        <SvgIcon iconName="arrow-right" class="w-6 h-8 ml-4" />
+      </a>
     </div>
     <div class="mt-9">
-      <router-link to="/" class="text-blue-default">
+      <a href="mailto:chiahua0307@gmail.com" class="text-blue-default">
         Need a password?
-      </router-link>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
-import UiButton from "../components/UiButton.vue";
 import Intro from "../components/Intro.vue";
+import SvgIcon from "../components/SvgIcon.vue";
 
 export default {
   name: "Login",
   components: {
-    UiButton,
     Intro,
+    SvgIcon,
+  },
+  data() {
+    return {
+      message: "",
+      show: false,
+      sign: false,
+    };
+  },
+  props: {
+    password: {
+      type: String,
+      default: "",
+    },
+  },
+  methods: {
+    verify(message) {
+      if (message === this.password) {
+        this.show = true;
+        this.sign = false;
+        this.$emit("value-update", this.show);
+      } else {
+        this.show = false;
+        this.sign = true;
+        this.$emit("value-update", this.show);
+      }
+    },
   },
 };
 </script>
