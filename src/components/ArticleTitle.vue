@@ -6,9 +6,11 @@
       </h3>
       <div
         class="mt-1"
-        data-aos="zoom-in"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="500"
+        data-aos="fade-up"
+        data-aos-offset="130"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
       >
         <SvgIcon iconName="arrow-right " class="w-6 h-6" />
       </div>
@@ -19,9 +21,10 @@
     </p>
   </div>
 </template>
-
 <script>
 import SvgIcon from "./SvgIcon.vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default {
   name: "ArticleTitle",
@@ -46,6 +49,9 @@ export default {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
+  },
+  mounted() {
+    window.addEventListener("load", AOS.refresh);
   },
 };
 </script>

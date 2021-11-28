@@ -1,13 +1,13 @@
 <template>
   <div v-for="(item, index) in items" :key="index">
     <button
-      class="lg:px-10 md:flex justify-between items-center py-9"
-      @click="changePage(item.herf)"
+      class="lg:px-10 md:flex justify-between items-center py-9 group"
+      @click="changePage(item.href)"
       :class="{
         'flex-row-reverse': index % 2,
       }"
     >
-      <div class="md:w-1/2 w-full">
+      <div class="md:w-1/2 w-full group-hover:opacity-20">
         <ArticlePicture :src="item.src" :alt="item.alt" />
       </div>
       <div

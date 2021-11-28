@@ -41,7 +41,7 @@ export default {
               subtitle: "UI/UX Branding",
               description:
                 "Emote is an app made to be a directory for your emotions, making self-reflection and analysis conveniently in your hands. ",
-              src: require("../assets/image/homepage/emote.jpg"),
+              src: require("../assets/image/homepage/Emote-Thumbnail.jpg"),
               alt: "Emote",
               herf: "/product/Emote",
             },
@@ -50,7 +50,7 @@ export default {
               subtitle: "UI/UX Branding",
               description:
                 "Emote is an app made to be a directory for your emotions, making self-reflection and analysis conveniently in your hands. ",
-              src: require("../assets/image/homepage/smartRM.jpg"),
+              src: require("../assets/image/homepage/SmartRM-Thumbnail.jpg"),
               alt: "SMART RM",
               herf: "/product/SmartRM",
             },
@@ -75,32 +75,32 @@ export default {
         {
           images: [
             {
-              src: require("../assets/image/carousel/AdjusTable-3.jpg"),
+              src: require("../assets/image/carousel/Bartander-Thumbnail.jpg"),
               alt: "Emote",
               href: "/product/Emote",
             },
             {
-              src: require("../assets/image/carousel/AdjusTable.jpg"),
+              src: require("../assets/image/carousel/Bartander-Thumbnail.jpg"),
               alt: "Emote",
               href: "/product/AdjusTable",
             },
             {
-              src: require("../assets/image/carousel/AdjusTable-5.jpg"),
+              src: require("../assets/image/carousel/Bartander-Thumbnail.jpg"),
               alt: "Emote",
               href: "/product/Connect4U",
             },
             {
-              src: require("../assets/image/carousel/AdjusTable-6.jpg"),
+              src: require("../assets/image/carousel/Bartander-Thumbnail.jpg"),
               alt: "Emote",
               href: "/product/LoveFortuneTeller",
             },
             {
-              src: require("../assets/image/carousel/AdjusTable-5.jpg"),
+              src: require("../assets/image/carousel/Bartander-Thumbnail.jpg"),
               alt: "Emote",
               href: "/product/Connect4U",
             },
             {
-              src: require("../assets/image/carousel/AdjusTable-4.jpg"),
+              src: require("../assets/image/carousel/Bartander-Thumbnail.jpg"),
               alt: "Emote",
               href: "/product/DumplingMaker",
             },

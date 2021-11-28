@@ -22,8 +22,12 @@
       class="md:mx-3"
     >
       <picture class="block">
-        <img :src="image.src" :alt="image.alt" class="w-full" />
+        <a v-if="image.href" :href="image.href">
+          <img :src="image.src" :alt="image.alt" class="w-full" />
+        </a>
+        <img v-else :src="image.src" :alt="image.alt" class="w-full" />
       </picture>
+
       <Conclusion
         v-if="image.conclusion"
         :title="image.conclusion.title"
@@ -63,7 +67,6 @@ import Login from "./Login.vue";
 
 export default {
   name: "Product",
-
   components: {
     Intro,
     Conclusion,
@@ -79,6 +82,7 @@ export default {
       inputValFromChild: "",
     };
   },
+  props: {},
   computed: {
     getProductById() {
       return this.$store.state.productLists.find(

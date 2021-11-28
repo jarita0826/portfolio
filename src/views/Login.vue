@@ -4,13 +4,11 @@
       <Intro :title="'Login'" />
       <p>Please enter password to access to my lastest work</p>
       <input
-        class="placeholder-black-lighter focus:outline-gray w-2/3"
+        class="placeholder-black-lighter focus:outline-white w-3/3"
         placeholder=" Enter Password"
         v-model="message"
       />
-      <p v-if="sign" class="text-red-500 font-extrabold">
-        This is the wrong password !!!
-      </p>
+      <p v-if="sign" class="text-red-600 font-light">Wrong Password</p>
       <a
         class="
           bg-black-default

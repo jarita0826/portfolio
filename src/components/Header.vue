@@ -32,7 +32,7 @@
           text-sm
         "
       >
-        <router-link to="/introduction">
+        <router-link to="/">
           <li class="hover:text-black-default">WORK</li></router-link
         >
         <router-link to="/about">
