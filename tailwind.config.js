@@ -26,7 +26,11 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            scale: ['group-hover'],
+            translate: ['group-hover'],
+            opacity: ['group-hover'],
+        },
     },
     plugins: [],
 };

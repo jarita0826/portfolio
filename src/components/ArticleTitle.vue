@@ -5,14 +5,9 @@
         {{ title }}
       </h3>
       <div
-        class="mt-1"
-        data-aos="fade-up"
-        data-aos-offset="130"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out"
-        data-aos-anchor-placement="top-center"
+        class="mt-1 transform transition opacity-0 group-hover:opacity-100 duration-700"
       >
-        <SvgIcon iconName="arrow-right " class="w-6 h-6" />
+        <SvgIcon iconName="arrow-right" class="w-6 h-6" />
       </div>
     </div>
     <span class="text-base font-medium text-black-lighter">{{ subTitle }}</span>
@@ -23,8 +18,6 @@
 </template>
 <script>
 import SvgIcon from "./SvgIcon.vue";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default {
   name: "ArticleTitle",
@@ -49,9 +42,6 @@ export default {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
-  },
-  mounted() {
-    window.addEventListener("load", AOS.refresh);
   },
 };
 </script>

@@ -6,8 +6,16 @@
       :class="{
         'flex-row-reverse': index % 2,
       }"
+      data-aos="fade-down"
+      data-aos-offset="60"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+      data-aos-once="ture"
+      data-aos-anchor-placement="top-center"
     >
-      <div class="md:w-1/2 w-full group-hover:opacity-20">
+      <div
+        class="md:w-1/2 w-full transform transition group-hover:scale-105 duration-700"
+      >
         <ArticlePicture :src="item.src" :alt="item.alt" />
       </div>
       <div
@@ -18,6 +26,7 @@
           :title="item.title"
           :subTitle="item.subtitle"
           :description="item.description"
+          :class="'group'"
         />
       </div>
     </button>

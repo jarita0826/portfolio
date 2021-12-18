@@ -12,7 +12,7 @@ import 'aos/dist/aos.css'
 smoothscroll.polyfill();
 
 
-createApp(App).use(store).use(router).use(AOS.init()).mount("#app");
+createApp(App).use(store).use(router).use(AOS.init({ once: true })).mount("#app");
 // .use(animated)
 
 const requireAll = (requireContext) =>
